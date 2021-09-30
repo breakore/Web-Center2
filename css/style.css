@@ -7,6 +7,13 @@
 
 @font-face {
   font-family: 'roboto';
+  src: url("../fonts/Roboto-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'roboto';
   src: url("../fonts/Roboto-Medium.ttf");
   font-weight: 500;
   font-style: normal;
@@ -38,6 +45,10 @@
   src: url("../fonts/AdobeInvisFont.ttf");
   font-weight: 500;
   font-style: normal;
+}
+
+body {
+  margin: 0 auto;
 }
 
 .header {
@@ -109,11 +120,13 @@
 .top_address {
   font-size: 14px;
   margin-left: 672px;
+  display: flex;
+  align-items: center;
+  width: 127px;
 }
 
 .top_address-link {
   color: #0159C9;
-  display: block;
   margin-left: 8px;
 }
 
@@ -125,11 +138,13 @@
 .top_phone-link {
   color: #0159C9;
   display: block;
+  margin-left: 25px;
 }
 
 .top_phone-text1 {
   font-size: 22px;
   color: #787878;
+  margin-left: 8px;
 }
 
 .top_phone-text2 {
@@ -155,3 +170,78 @@
 .top_img-phone {}
 
 .top_img-cart {}
+
+.search {}
+
+.search_form {
+  margin-left: 672px;
+  padding-top: 12px;
+  display: inline-block;
+}
+
+.search_form-input {
+  width: 527px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-position: 491px;
+  background-image: url('/img/pics/search.png');
+  border-color: #BFBFBF;
+  ;
+}
+
+.search_form-input::placeholder {
+  color: #C5C5C5;
+  padding-left: 23px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.search_icons {
+  display: inline-block;
+  margin-left: 66px;
+}
+
+.search_icons-graph {}
+
+.search_icons-heart {
+  margin-left: 11px;
+}
+
+.search_icons-man {
+  margin-left: 23px;
+}
+
+.search_login {
+  font-family: 'roboto';
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 6px;
+  color: #ADB2B6;
+}
+
+.menu {
+  height: 57px;
+  background-color: #565B61;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_item {
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  font-family: 'roboto';
+  font-weight: 500;
+  color: #F3F3F3;
+  width: 114px;
+  align-items: center;
+  display: flex;
+}
+
+.menu_item-text {}
+
+.orange_item {}
+
+.orange_text {
+  margin-left: 4px;
+}
